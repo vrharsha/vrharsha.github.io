@@ -105,6 +105,13 @@ section {
     width: 200px;
     border-radius: 20px;
     transition: transform 0.3s;
+    text-decoration: none;   /* remove underline */
+    color: white;            /* keep text white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
 .card:hover {
@@ -339,3 +346,4 @@ section {
         height: 130px;
     }
 }
+
