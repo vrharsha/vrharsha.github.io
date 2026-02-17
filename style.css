@@ -105,18 +105,27 @@ section {
     width: 200px;
     border-radius: 20px;
     transition: transform 0.3s;
-    text-decoration: none;   /* remove underline */
-    color: white;            /* keep text white */
+    text-decoration: none;      /* ❌ remove underline */
+    color: white;               /* keep white text */
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 }
 
+/* Remove blue link color */
+.card:visited,
+.card:active {
+    color: white;
 }
 
+/* Hover effect */
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.3);
+    text-decoration: none;      /* extra safety */
 }
+
 
 /* Contact */
 .contact {
@@ -345,10 +354,6 @@ section {
         width: 200px;
         height: 130px;
     }
-}
-.card:hover {
-    transform: scale(1.05);
-    background: rgba(255,255,255,0.3);
 }
 
 
